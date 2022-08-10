@@ -33,5 +33,6 @@ urlpatterns = [
     path('jiating/',views.jiating),
     path('shop/',views.shopINfo),
     path('jinhuo',views.jinhuo),
-    path('kuncun',views.kucun)
+    path('kuncun',views.kucun),
+    path('data',views.data),
 ]

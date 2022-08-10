@@ -5,9 +5,7 @@ from django.contrib.sessions import serializers
 from django.http.response import JsonResponse
 from django.core import serializers
 import json
-# Create your views here.
 from django.shortcuts import render, HttpResponse
-from scipy.sparse import data
 
 from app.models import UserInfo
 from app.models import kuchunINfo
@@ -21,8 +19,16 @@ def index(request):
 def user_list(request):
     return render(request, "user_list.html")
 
+def data(request):
+    data={
+        'code': '200',
+        'message': '获取成功!'
+    }
+    return JsonResponse(data=data,safe=False)
 
 def orm(request):
+    name = request.POST.get('username')
+    print(name)
     article = serializers.serialize('json', UserInfo.objects.all()[:5])
     # 将字符串转换为json对象
     jsondata = json.loads(article)
