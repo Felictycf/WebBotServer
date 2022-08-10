@@ -1,0 +1,50 @@
+{
+    "created_time": "2022-01-19T14:39:13Z",
+    "files": [
+        {
+            "attachment_folder": "",
+            "created_time": "2022-01-19T14:39:13Z",
+            "id": "5647",
+            "modified_time": "2022-01-19T14:39:13Z",
+            "name": "login.html",
+            "signature": "18061980082833",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2022-01-19T14:39:13Z",
+            "id": "5648",
+            "modified_time": "2022-01-19T14:39:13Z",
+            "name": "register.html",
+            "signature": "65066102170257",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2022-01-19T14:39:13Z",
+            "id": "5649",
+            "modified_time": "2022-01-19T14:39:13Z",
+            "name": "req.html",
+            "signature": "65529958638225",
+            "tags": [
+            ]
+        }
+    ],
+    "folders": [
+        {
+            "name": "css"
+        },
+        {
+            "name": "imgs"
+        },
+        {
+            "name": "WEB-INF"
+        }
+    ],
+    "id": "5640",
+    "modified_time": "2022-01-19T14:39:13Z",
+    "signature": "117877020041873",
+    "version": 3
+}

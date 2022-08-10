@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap 实例 - 基本的表格</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<table class="table">
+    <caption>查询用户家庭的疫苗检测情况</caption>
+    <form action="/select" method="get" class="form-horizontal" role="form">
+        <div class="form-group">
+            <label for="firstname" class="col-sm-2 control-label">右边是输入查询家庭个人防疫信息</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="username"
+                       name="username"
+                       placeholder="请输入名字">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> 请记住我
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <input type="submit" value="搜索" class="btn btn-default">搜索该用户</input>
+            </div>
+        </div>
+    </form>
+    <thead>
+    <tr>
+        <th>名称</th>
+        <th>核酸情况</th>
+        <th>住址</th>
+        <th>年龄</th>
+        <th>电话</th>
+        <th>疫苗接种</th>
+        <th>疫苗接种日期</th>
+    </tr>
+    </thead>
+    <tbody>
+    {#    <tr>#}
+    {#        <td>Tanmay</td>#}
+    {#        <td>Bangalore</td>#}
+    {#    </tr>#}
+    {% for itm in data_list %}
+        <tr>
+            <td>{{ itm.name }}</td>
+            <td>{{ itm.kesuan }}</td>
+            <td>{{ itm.address }}</td>
+            <td>{{ itm.age }}</td>
+            <td>{{ itm.number }}</td>
+            <td>{{ itm.vaccine }}</td>
+            <td> {{ itm.date}}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+</body>
+</html>
